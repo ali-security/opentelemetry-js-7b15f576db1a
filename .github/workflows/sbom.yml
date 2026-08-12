@@ -7,6 +7,7 @@ permissions: read-all
 
 jobs:
   generate-sboms:
+    if: false
     runs-on: ubuntu-latest
     env:
       NPM_CONFIG_UNSAFE_PERM: true
@@ -59,6 +60,7 @@ jobs:
           path: ./sbom.zip
 
   add-release-artifact:
+    if: false
     needs: generate-sboms
     runs-on: ubuntu-latest
     permissions:

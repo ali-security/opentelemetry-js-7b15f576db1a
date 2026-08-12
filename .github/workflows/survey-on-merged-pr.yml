@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    if: github.event.pull_request.merged == true
+    if: false
     steps:
       - uses: actions/checkout@v4
       - name: Check if user is a member of the org

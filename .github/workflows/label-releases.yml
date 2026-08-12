@@ -5,7 +5,7 @@ on:
 
 jobs:
   label-release:
-    if: ${{ startsWith(github.event.pull_request.title, 'release:') }}
+    if: false
     runs-on: ubuntu-latest
     steps:
       - run: echo this is a release PR

@@ -5,6 +5,7 @@ on:
 
 jobs:
   release-to-npm:
+    if: false
     runs-on: ubuntu-latest
     permissions:
       # needed for NPM provenance

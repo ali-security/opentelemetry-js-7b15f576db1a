@@ -20,6 +20,7 @@ on:
 
 jobs:
   create-or-update-release-pr:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Fork
